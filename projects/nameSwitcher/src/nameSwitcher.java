@@ -1,8 +1,12 @@
+// nameSwitcher.java
+// Some strange switching of first last and middle name
+// Author: RC
 import java.util.Scanner;
 public class nameSwitcher
 {
 	public static void main(String[] args)
 	{
+	
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter full name: ");
 		String userInput = input.nextLine();
