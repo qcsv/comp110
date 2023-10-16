@@ -16,9 +16,14 @@ public class initalDiamond
 		      	n++; //if n is even, icrement by one
 		}
 		System.out.printf("Number of lines: %d\n", n);
+		firstTriangle(n);
+		barrierLine(n);
+		secondTriangle(n);
+	}
 		
 
-
+	public static void firstTriangle(int n)
+	{
 		//first triangle
 		for (int x = 1; x < n; x++)
 		{ 
@@ -32,15 +37,18 @@ public class initalDiamond
 			}
 			System.out.print("\n");
 		}
-
+	}
+	public static void barrierLine(int n)
+	{
 		//barrier line
 		for (int l = 0; l < n * 2; l++)
 		{
 			System.out.print("=");
 		}
 		System.out.print("\n");
-
-
+	}
+	public static void secondTriangle(int n)
+	{
 		for (int x = n; x >= 1; x--)
 		{ 
 			for (int bl = 0; bl < n - x; bl++)
@@ -53,6 +61,10 @@ public class initalDiamond
 			}
 			System.out.print("\n");              		
 		}
-
 	}
 }
+
+
+
+
+
