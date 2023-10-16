@@ -16,13 +16,14 @@ public class initalDiamond
 		      	n++; //if n is even, icrement by one
 		}
 		System.out.printf("Number of lines: %d\n", n);
-		firstTriangle(n);
-		barrierLine(n);
-		secondTriangle(n);
+		RCfirstTriangle(n, 'R');
+		RCbarrierLine(n, '=');
+		RCsecondTriangle(n, 'C');
+		System.out.println("RISHI CUTCHIN");
 	}
 		
 
-	public static void firstTriangle(int n)
+	public static void RCfirstTriangle(int n, char ch)
 	{
 		//first triangle
 		for (int x = 1; x < n; x++)
@@ -33,21 +34,21 @@ public class initalDiamond
 			}
 			for (int y = 0; y < (x * 2) - 1; y++)
 			{
-				System.out.print("*");
+				System.out.print(ch);
 			}
 			System.out.print("\n");
 		}
 	}
-	public static void barrierLine(int n)
+	public static void RCbarrierLine(int n, char ch)
 	{
 		//barrier line
 		for (int l = 0; l < n * 2; l++)
 		{
-			System.out.print("=");
+			System.out.print(ch);
 		}
 		System.out.print("\n");
 	}
-	public static void secondTriangle(int n)
+	public static void RCsecondTriangle(int n, char ch)
 	{
 		for (int x = n; x >= 1; x--)
 		{ 
@@ -57,7 +58,7 @@ public class initalDiamond
 			}
 			for (int y = 0; y < (x * 2) - 1; y++)
 			{
-				System.out.print("*");
+				System.out.print(ch);
 			}
 			System.out.print("\n");              		
 		}
