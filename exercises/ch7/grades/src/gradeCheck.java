@@ -48,7 +48,7 @@ public class gradeCheck
 			}
 		}
 
-		System.out.println(best);
+//debug		System.out.println(best);
 
 
 	}
