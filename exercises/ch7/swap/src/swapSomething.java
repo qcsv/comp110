@@ -1,5 +1,5 @@
 /*
-    swapSomething.java - Accept Input and Check Grades
+    swapSomething.java - sorts an array or something
 
     Written in 2023 by Rishi Cutchin rishincutchin@gmail.com
 
